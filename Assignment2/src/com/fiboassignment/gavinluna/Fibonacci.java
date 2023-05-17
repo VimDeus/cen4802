@@ -2,12 +2,18 @@ package com.fiboassignment.gavinluna;
 
 public class Fibonacci {
     
-	
-    // An array to store the computed Fibonacci numbers. Used to check against already computed numbers and improve efficiency.
+	/**
+    * An array to store the computed Fibonacci numbers. Used to check against already computed numbers and improve efficiency.
+    */
     private static int[] memo;
 
     
-    // This method calculates the nth term of the Fibonacci sequence.
+    /**
+     * This method Calculates the nth term of the Fibonacci sequence.
+     *
+     * @param n The term to calculate.
+     * @return The nth term of the Fibonacci sequence.
+     */
     public static int fibonacci(int n) {
         if(memo[n] != 0) {
             return memo[n];  // Returns the stored result
@@ -21,7 +27,14 @@ public class Fibonacci {
     }
 
     
-    // Main method wherein the term is declared and the methods are called.
+    /**
+     * The main method.
+     * 
+     * Calls the fibonacci method to calculate the 10th term of the Fibonacci sequence 
+     * and prints the result.
+     *
+     * @param args Command-line arguments (ignored).
+     */
     public static void main(String[] args) {
         int term = 10;
         
